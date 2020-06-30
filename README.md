@@ -1,5 +1,6 @@
 # WeiboSpammer
 Course project of Social Network Mining(DATA130007.01), Supervised by [Deqing Yang](http://www.cs.fudan.edu.cn/?page_id=2393)
+
 Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan Univerisity
 
 
