@@ -10,7 +10,7 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
 
 在`./app/main.py`中，改变任意用户的id，即可生成该用户新浪微博个性化报告。
 运行截图：
-<img src="https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/app_log.png" width = "600" height = "350" alt="图片说明" align=center />
+<img src="https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/app_log.png" width = "600" height = "390" alt="图片说明" align=center />
 
 该个性化报告包括(这里我们以明星秦昊为例)：
 
@@ -111,7 +111,14 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
      就一年中各月微博数统计，正常用户各月较为均衡，而虚假用户有短时突发性。
      ![time_cmp1](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/time_comp.png)
      ![time_cmp2](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/time_comp2.png)
-     
+
+
+## 机器学习分类器
+* 数据集在`./data`中，包括2234位用户，40万条微博内容。
+* 特征工程如上所叙述，两类用户在各个特征值上均值差异显著
+  ![features_avg_comp](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/val_cmp.png)
+* 模型在训练集上运行效果
+  ![testset_res](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/model_res.png)
   
 ## 参考
 * 爬虫参考(https://github.com/dataabc/weiboSpider , https://github.com/dataabc/weibo-crawler)
