@@ -108,3 +108,9 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
      ![time_cmp2](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/time_comp2.png)
      
   
+## 参考
+1 爬虫参考(https://github.com/dataabc/weiboSpider , https://github.com/dataabc/weibo-crawler)
+  > 第二个是免cookie版，缺点是微博发布时间只能精确到天，第一版能精确到分
+2 微博数据可视化(https://github.com/easilylazy/gitskills)  
+  > 参考关注关系形成的中国地图、博文传播绘制
+## 
