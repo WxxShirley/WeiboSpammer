@@ -39,7 +39,17 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
 
 
 ## 代码与文件介绍
+### 爬虫 `./crawler`
+* `user_weibo.py`：指定用户id，爬取该用户详细个人信息与全部微博内容，写入csv文件中
+    * 用户信息包括：id、昵称、地区、性别、信用、注册时间、微博数、关注数、粉丝数、个人简介
+    * 微博内容包括：微博id、内容、发布时间（**精确到分**）、是否转发、长度、是否含url、点赞数、转发数、关注数
+* `bfs_network.py`：指定用户id，爬取其三阶粉丝网络、写入csv文件中
+> 注意：需要设定自己的cookie以及调整休眠时间（新浪微博api有限流）
 
+### 虚假用户检测二分类数据集 `./data`
+* `UserDetail.csv` 用户信息 
+  > 这些用户是从蔡徐坤微博评论中随机选择，因此虚假账号较多，而且非常典型
+* `weibo.csv` 上述用户的微博信息
 
 
 
