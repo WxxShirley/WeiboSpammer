@@ -58,9 +58,9 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
 > 注意：需要设定自己的cookie以及调整休眠时间（新浪微博api有限流）
 
 #### 虚假用户检测二分类数据集 `./data`
-* `UserDetail.csv` 用户信息 
+* `UserDetail.csv` 用户信息 ，共2234位
   > 这些用户是从蔡徐坤微博评论中随机选择，因此虚假账号较多，而且非常典型
-* `weibo.csv` 上述用户的微博信息
+* `weibo.csv` 上述用户的微博信息,接近40w条
 
 #### 两类网络分析 `./network_analysis`
 * NormNet - 正常用户网络
@@ -113,12 +113,6 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
      ![time_cmp2](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/time_comp2.png)
 
 
-## 机器学习分类器
-* 数据集在`./data`中，包括2234位用户，40万条微博内容。
-* 特征工程如上所叙述，两类用户在各个特征值上均值差异显著
-  ![features_avg_comp](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/val_cmp.png)
-* 模型在训练集上运行效果
-  ![testset_res](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/model_res.png)
   
 ## 参考
 * 爬虫参考(https://github.com/dataabc/weiboSpider , https://github.com/dataabc/weibo-crawler)
