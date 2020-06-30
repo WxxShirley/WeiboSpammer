@@ -3,9 +3,25 @@ Course project of Social Network Mining(DATA130007.01), Supervised by [Deqing Ya
 
 Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan Univerisity
 
+###
 
-## 前端展示
+## 😄使用我们的微博个性化报告
 [前端效果](https://github.com/Cautiousss/Weibo)
+
+在`./app/main.py`中，输入任意用户的id，即可生成该用户新浪微博个性化报告。
+运行截图：
+<img src="https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/app_log.png" width = "600" height = "600" alt="图片说明" align=center />
+
+该个性化报告包括(这里我们以明星秦昊为例)：
+* 微博内容词云
+   ![wc](https://github.com/WxxShirley/WeiboSpammer/blob/master/app/derived/kw_1740197697.png)
+* 好友在中国地图分布
+   ![regoin](https://github.com/WxxShirley/WeiboSpammer/blob/master/app/derived/region_1740197697.png)
+* 异常粉丝(调用我们预训练的虚假用户分类模型)
+* 沉寂关注(最近半年没发微博)
+* 发微博时间统计图
+  <img src="https://github.com/WxxShirley/WeiboSpammer/blob/master/app/derived/date_1740197697.png" width = "400" height = "300" alt="图片说明" align=center />
+   
 
 ## 工作介绍
 * 新浪微博虚假用户检测
