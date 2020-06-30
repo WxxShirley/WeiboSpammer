@@ -4,8 +4,12 @@ Course project of Social Network Mining(DATA130007.01), Supervised by [Deqing Ya
 Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan Univerisity
 
 
-## 前端展示
+## 使用我们的微博个性化报告
 [前端效果](https://github.com/Cautiousss/Weibo)
+在`./app/main.py`中，输入任意用户的id，即可生成该用户新浪微博个性化报告。
+运行截图：
+![运行效果log](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/app_log.png=300x)
+
 
 ## 工作介绍
 * 新浪微博虚假用户检测
