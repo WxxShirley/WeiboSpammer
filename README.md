@@ -8,7 +8,7 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
 [前端效果](https://github.com/Cautiousss/Weibo)
 在`./app/main.py`中，输入任意用户的id，即可生成该用户新浪微博个性化报告。
 运行截图：
-![运行效果log](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/app_log.png=300x)
+![运行效果log](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/app_log.png =300x)
 
 
 ## 工作介绍
