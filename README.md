@@ -46,7 +46,7 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
 * 应用
    * 功能：输入任意一位新浪微博用户的id，生成他/她的个性化报告。
    * 包括：**微博内容词云图**、**好友分布的中国地图**、**沉寂关注**（关注的人中近半年没有发微博的）、**异常粉丝**（应用我们训练好的分类模型，检测粉丝中的虚假用户）
-
+##
 
 ## 代码与文件介绍
 #### 爬虫 `./crawler`
@@ -71,6 +71,38 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
      * 用户间微博转发关系，并可视化
 * SpamNet - 虚假用户网络
    方法类似，因此只上传了数据
-   
-   
 
+#### 衍生的微博个性化报告 `./app`
+启动main.py,即可获取任意id的用户的新浪微博报告
+
+##
+
+
+## 正常用户与虚假用户社交网络差异分析
+### 网络可视化
+* 关注-被关注关系
+  * 正常用户网络 - 连接稠密，外围小的聚集
+    ![normalnet](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/NormNet.jpeg)
+  * 虚假用户网络 - 一个个小的聚集圈，**小世界**现象显著
+    ![spamnet](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/SpamNet.jpeg)
+
+* 微博转发关系
+   * 正常用户的社交网络间存在微博转发关系，如下图. 我们只爬了他们最近的二十条微博，这九百个节点便已经可以形成非常可观的转发关系
+   ![repost](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/RepostNetwork.jpeg)
+
+
+### 网络属性
+* 度分布。NormNet平均度数2.9，SpamNet1.5。NormNet的度分布能拟合出幂律分布
+  ![degree](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/degree.png)
+  
+* 连通性。NormNet强连通分类420，远小于SpamNet。NormNet平均路径长度**5.22**，非常接近**六度**空间理论  
+
+* 同质性。
+  * 比较用户的微博内容与好友的微博内容，文本相似度高
+  * 活跃时间。
+     就一天中发文时间来看，正常用户在中午和晚上有两个高峰，符合正常用户通勤作息。虚假用户夜间频率高
+     就一年中各月微博数统计，正常用户各月较为均衡，而虚假用户有短时突发性。
+     ![time_cmp1](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/time_comp.png)
+     ![time_cmp2](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/time_comp2.png)
+     
+  
