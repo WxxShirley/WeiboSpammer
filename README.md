@@ -17,7 +17,7 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
 * 微博内容词云
    ![wc](https://github.com/WxxShirley/WeiboSpammer/blob/master/app/derived/kw_1740197697.png)
 * 好友在中国地图分布
-   ![regoin](https://github.com/WxxShirley/WeiboSpammer/blob/master/app/derived/region_1740197697.png)
+   ![regoin](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/Qinhao_region.png)
 * 异常粉丝(调用我们预训练的虚假用户分类模型)
 * 沉寂关注(最近半年没发微博)
 * 发微博时间统计图
@@ -90,6 +90,11 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
 * 微博转发关系
    * 正常用户的社交网络间存在微博转发关系，如下图. 我们只爬了他们最近的二十条微博，这九百个节点便已经可以形成非常可观的转发关系
    ![repost](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/RepostNetwork.jpeg)
+
+* 地域间关注关系
+   * 正常用户与好友分布图（左），正常用户在江苏，好友在江浙沪形成聚集，说明正常用户与好友位置较近
+   * 虚假用户与好友分布（右）距离较远
+   ![region_comp](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/region_comp.png)
 
 
 ### 网络属性
