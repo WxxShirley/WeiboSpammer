@@ -95,6 +95,7 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
 * 度分布。NormNet平均度数2.9，SpamNet1.5。NormNet的度分布能拟合出幂律分布
   ![degree](https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/degree.png)
   
+  
 * 连通性。NormNet强连通分类420，远小于SpamNet。NormNet平均路径长度**5.22**，非常接近**六度**空间理论  
 
 * 同质性。
