@@ -3,7 +3,7 @@ Course project of Social Network Mining(DATA130007.01), Supervised by [Deqing Ya
 
 Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan Univerisity
 
-###
+##
 
 ## 😄使用我们的微博个性化报告
 [前端效果](https://github.com/Cautiousss/Weibo)
