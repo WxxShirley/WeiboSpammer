@@ -8,11 +8,12 @@ Copyright (c) 2020 by [Xiaoxin He](https://github.com/Cautiousss),Xixi Wu @Fudan
 ## 😄使用我们的微博个性化报告
 [前端效果](https://github.com/Cautiousss/Weibo)
 
-在`./app/main.py`中，输入任意用户的id，即可生成该用户新浪微博个性化报告。
+在`./app/main.py`中，改变任意用户的id，即可生成该用户新浪微博个性化报告。
 运行截图：
-<img src="https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/app_log.png" width = "600" height = "600" alt="图片说明" align=center />
+<img src="https://github.com/WxxShirley/WeiboSpammer/blob/master/imgs/app_log.png" width = "600" height = "700" alt="图片说明" align=center />
 
 该个性化报告包括(这里我们以明星秦昊为例)：
+
 * 微博内容词云
    ![wc](https://github.com/WxxShirley/WeiboSpammer/blob/master/app/derived/kw_1740197697.png)
 * 好友在中国地图分布
